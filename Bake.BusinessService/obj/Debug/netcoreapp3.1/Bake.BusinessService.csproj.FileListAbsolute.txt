@@ -1,0 +1,12 @@
+C:\Users\Annie Philip\source\repos\Bake\Bake.BusinessService\bin\Debug\netcoreapp3.1\Bake.BusinessService.deps.json
+C:\Users\Annie Philip\source\repos\Bake\Bake.BusinessService\bin\Debug\netcoreapp3.1\Bake.BusinessService.dll
+C:\Users\Annie Philip\source\repos\Bake\Bake.BusinessService\bin\Debug\netcoreapp3.1\Bake.BusinessService.pdb
+C:\Users\Annie Philip\source\repos\Bake\Bake.BusinessService\bin\Debug\netcoreapp3.1\Bake.DataService.dll
+C:\Users\Annie Philip\source\repos\Bake\Bake.BusinessService\bin\Debug\netcoreapp3.1\Bake.DataService.pdb
+C:\Users\Annie Philip\source\repos\Bake\Bake.BusinessService\obj\Debug\netcoreapp3.1\Bake.BusinessService.csprojAssemblyReference.cache
+C:\Users\Annie Philip\source\repos\Bake\Bake.BusinessService\obj\Debug\netcoreapp3.1\Bake.BusinessService.AssemblyInfoInputs.cache
+C:\Users\Annie Philip\source\repos\Bake\Bake.BusinessService\obj\Debug\netcoreapp3.1\Bake.BusinessService.AssemblyInfo.cs
+C:\Users\Annie Philip\source\repos\Bake\Bake.BusinessService\obj\Debug\netcoreapp3.1\Bake.BusinessService.csproj.CoreCompileInputs.cache
+C:\Users\Annie Philip\source\repos\Bake\Bake.BusinessService\obj\Debug\netcoreapp3.1\Bake.BusinessService.csproj.CopyComplete
+C:\Users\Annie Philip\source\repos\Bake\Bake.BusinessService\obj\Debug\netcoreapp3.1\Bake.BusinessService.dll
+C:\Users\Annie Philip\source\repos\Bake\Bake.BusinessService\obj\Debug\netcoreapp3.1\Bake.BusinessService.pdb
