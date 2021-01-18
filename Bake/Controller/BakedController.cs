@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Bake.Controller
 {
-    [Route("api/customers")]
+    
     [ApiController]
     public class BakedController: ControllerBase
 
@@ -31,6 +31,7 @@ namespace Bake.Controller
         //private readonly CustomerRepo _customer = new CustomerRepo();
 
         //GET api/customers
+        [Route("api/customers")]
         [HttpGet]
         public ActionResult <IEnumerable<CustomerReadDto>> GetAllCustomers()
         {
@@ -40,7 +41,7 @@ namespace Bake.Controller
         }
 
         //GET api/customers/{id}
-        [HttpGet("{id}")]
+        [HttpGet("api/customers/{id}")]
         public ActionResult <CustomerReadDto> GetCustomerById(int id)
         {
             var customer = _customer.GetCustomerById(id);
@@ -66,7 +67,7 @@ namespace Bake.Controller
         }
 
         //PUT api/customers/{id}
-        [HttpPut("{id}")]
+        [HttpPut("api/customers/{id}")]
         public ActionResult UpdateCustomer(int id, CustomerUpdateDto customerUpdateDto)
         {
             var customerModelFromRepo = _customer.GetCustomerById(id);
@@ -81,7 +82,7 @@ namespace Bake.Controller
         }
 
         //PATCH api/customers/{id}
-        [HttpPatch("{id}")]
+        [HttpPatch("api/customers/{id}")]
         public ActionResult PartialCustomerUpdate(int id, JsonPatchDocument<CustomerUpdateDto> patchDoc)
         {
             var customerModelFromRepo = _customer.GetCustomerById(id);
@@ -106,7 +107,7 @@ namespace Bake.Controller
         }
 
         //DELETE api/customers/{id}
-        [HttpDelete("{id}")]
+        [HttpDelete("api/customers/{id}")]
         public ActionResult DeleteCustomer(int id)
         {
             var customerModelFromRepo = _customer.GetCustomerById(id);
@@ -128,7 +129,7 @@ namespace Bake.Controller
 
 
         //GET api/items
-        [HttpGet]
+        [HttpGet("api/items")]
         public ActionResult<IEnumerable<ItemReadDto>> GetAllItems()
         {
             var items = _item.GetAllItems();
@@ -137,7 +138,7 @@ namespace Bake.Controller
         }
 
         //GET api/items/{id}
-        [HttpGet("{id}")]
+        [HttpGet("api/items/{id}")]
         public ActionResult<ItemReadDto> GetItemById(int id)
         {
             var item = _item.GetItemById(id);
@@ -149,7 +150,7 @@ namespace Bake.Controller
         }
 
         //POST api/items
-        [HttpPost]
+        [HttpPost("api/items")]
         public ActionResult<ItemReadDto> CreateItem(ItemCreateDto itemCreateDto)
         {
             var itemModel = _mapper.Map<item>(itemCreateDto);
@@ -163,7 +164,7 @@ namespace Bake.Controller
         }
 
         //PUT api/items/{id}
-        [HttpPut("{id}")]
+        [HttpPut("api/items/{id}")]
         public ActionResult UpdateItem(int id, ItemUpdateDto itemUpdateDto)
         {
             var itemModelFromRepo = _item.GetItemById(id);
@@ -178,7 +179,7 @@ namespace Bake.Controller
         }
 
         //PATCH api/items/{id}
-        [HttpPatch("{id}")]
+        [HttpPatch("api/items/{id}")]
         public ActionResult PartialItemUpdate(int id, JsonPatchDocument<ItemUpdateDto> patchDoc)
         {
             var itemModelFromRepo = _item.GetItemById(id);
@@ -203,7 +204,7 @@ namespace Bake.Controller
         }
 
         //DELETE api/items/{id}
-        [HttpDelete("{id}")]
+        [HttpDelete("api/items/{id}")]
         public ActionResult DeleteItem(int id)
         {
             var itemModelFromRepo = _item.GetItemById(id);
@@ -226,7 +227,7 @@ namespace Bake.Controller
 
 
         //GET api/orders
-        [HttpGet]
+        [HttpGet("api/orders")]
         public ActionResult<IEnumerable<OrderReadDto>> GetAllOrders()
         {
             var orders = _order.GetAllOrders();
@@ -234,7 +235,7 @@ namespace Bake.Controller
         }
 
         //GET api/orders/{id}
-        [HttpGet("{id}")]
+        [HttpGet("api/orders/{id}")]
         public ActionResult<OrderReadDto> GetOrderById(int id)
         {
             var order = _order.GetOrderById(id);
@@ -246,7 +247,7 @@ namespace Bake.Controller
         }
 
         //POST api/orders
-        [HttpPost]
+        [HttpPost("api/orders")]
         public ActionResult<OrderReadDto> CreateOrder(OrderCreateDto orderCreateDto)
         {
             var orderModel = _mapper.Map<order>(orderCreateDto);
@@ -258,7 +259,7 @@ namespace Bake.Controller
         }
 
         //PUT api/orders/{id}
-        [HttpPut("{id}")]
+        [HttpPut("api/orders/{id}")]
         public ActionResult UpdateOrder(int id, OrderUpdateDto orderUpdateDto)
         {
             var orderModelFromRepo = _order.GetOrderById(id);
@@ -273,7 +274,7 @@ namespace Bake.Controller
         }
 
         //PATCH api/orders/{id}
-        [HttpPatch("{id}")]
+        [HttpPatch("api/orders/{id}")]
         public ActionResult PartialOrderUpdate(int id, JsonPatchDocument<OrderUpdateDto> patchDoc)
         {
             var orderModelFromRepo = _order.GetOrderById(id);
@@ -296,7 +297,7 @@ namespace Bake.Controller
         }
 
         //DELETE api/orders/{id}
-        [HttpDelete("{id}")]
+        [HttpDelete("api/orders/{id}")]
         public ActionResult DeleteOrder(int id)
         {
             var orderModelFromRepo = _order.GetOrderById(id);
