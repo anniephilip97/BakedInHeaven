@@ -1,0 +1,25 @@
+With respect to Item table 
+
+POST /items/itemid              //adding an item and its details to the database
+PUT /items/itemid               //updating the item details
+PATCH /items/itemid             //updating one particular column or two in the item table(like price)
+GET /items                      //getting the list of the items
+GET /items/itemid               //getting the details about the items 
+DELETE /items/itemid            //deleting an item from the list
+
+
+With respect to Customer table
+
+POST /customers                  //adding the customer to the database
+PUT /customers/customerid        //updating the customer details
+PATCH /customers/customerid      //updating some columns in the customer table like phone number
+GET /customers/customerid        //getting the details of a customer 
+
+
+With respect to Order table
+
+POST /orders                     //placing a new order 
+PATCH /orders/orderid            //updating the order detail (status)
+GET /orders/orderid              //getting the order details 
+DELETE /orders/orderid           //cancelling an order
+
