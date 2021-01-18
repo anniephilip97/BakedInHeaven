@@ -1,0 +1,30 @@
+Create Database BakedInHeavenDB; ########creating database
+
+
+###### Creating tables inside database#######
+
+Create table Customer(CustomerID int NOT NULL PRIMARY KEY,Name varchar(20) NOT NULL,
+Address varchar(30) NOT NULL,PhoneNo varchar(10) NOT NULL,Zipcode varchar(8) NOT NULL);
+
+Create table Item(ItemID int NOT NULL PRIMARY KEY,ItemName varchar(20) NOT NULL UNIQUE,
+quantity varchar(10) NOT NULL,price varchar(15) NOT NULL,kal varchar(20) NOT NULL, 
+FoodType varchar(10) NOT NULL, special varchar(15) NOT NULL, AvailableDate DATETIME NOT NULL, 
+no_available int NOT NULL);
+
+Create table Order(OrderID int NOT NULL PRIMARY KEY, CustomerID int NOT NULL FOREIGN KEY,
+ItemID int NOT NULL FOREIGN KEY, ItemName varchar(20) NOT NULL,quantity int NOT NULL,
+price varchar(15) NOT NULL, date_of_delivery DATETIME NOT NULL, status varchar(15) NOT NULL);
+
+
+####### Inserting values into the tables########
+
+INSERT INTO Customer(CustomerID,Name,Address,PhoneNo,Zipcode)
+VALUES (1, 'Tom', 'SG Palaya',9045632215 , '560029', '2021-01-12');
+
+INSERT INTO Item (ItemID, ItemName,quantity,price,kal, FoodType, special, AvailableDate, no_available)
+VALUES (1, 'CupCake', '50grams','500kcal','NonVeg','Not special','2021-01-20', 25);
+
+INSERT INTO Order(OrderID,CustomerID,ItemID, ItemName, quantity, price, date_of_delivery, status)
+VALUES (1, 1, 1,'CupCake', 8, 'Rs 320','2021-01-20', 'not delivered');
+
+
