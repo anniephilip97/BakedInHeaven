@@ -1,0 +1,16 @@
+<div class="content-box">
+    <a routerLink="/items">
+        <button>Back</button>
+    </a>
+    <h2>{{item.itemName}}</h2>
+    <p>{{item.price}}</p>
+    <p>{{item.quantity}}</p>
+    <p>{{item.kcal}}</p>
+    <p>{{item.veg}}</p>
+    <p>{{item.spl}}</p>
+    <p>{{item.no_Available}}</p>
+    <p>{{item.availableDate}}</p>
+    <a routerLink="/order/{{item.itemId}}">
+        <button>Order Now</button>
+    </a>
+</div>

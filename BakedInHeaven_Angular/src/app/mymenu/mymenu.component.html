@@ -1,0 +1,40 @@
+
+<nav class="navbar navbar-light" style="background-color: rgb(204, 107, 75)">
+  <!-- Navbar content -->
+  <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="mymenu">MyMenu</a>
+      </li>
+      <!--
+      <li class="nav-item">
+        <a class="nav-link" style="font-family:cursive" href="order">Orders</a>
+      </li>
+      -->
+    </ul>
+</nav>
+
+
+<div class="row"> 
+<div class="card" style="background-color:burlywood; max-width: 15rem; margin-right: 10px;margin-bottom: 10px; margin-left: 10px;" *ngFor="let item of items">
+    <div class="card-header" style="font-family:cursive; background-color: rgb(223, 115, 79);">  
+        {{item.spl}}-({{item.veg}})
+      </div>
+    <img src="./assets/img/Chocolate Cup Cake.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title" style="font-family:cursive">{{item.itemName}} ({{item.price}})</h5>
+      <div class="card-text" style="font-family:cursive">
+        
+        <p>Available on: {{item.no_Available}}</p>
+      </div>
+      <a href="/edit-item/{{item.itemId}}" class="btn btn-primary" style="margin-left:70%;background-color: green;">Edit</a>
+       <p>
+         <br />
+           <button class="btn btn-primary" style="margin-left:70%; background-color:red" (click)="OnDeleteClicked(item.itemId)">Delete</button>
+       </p>   
+      </div>
+</div>
+</div>
+
+
+    <button class="btn btn-primary" style="margin-left:42%; " routerLink="/add-item">Add New Item</button>
+     

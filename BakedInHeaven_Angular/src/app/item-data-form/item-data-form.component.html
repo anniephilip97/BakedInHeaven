@@ -1,0 +1,86 @@
+<div class="card" style="width: 100%rem; margin-right: 200px;  margin-left: 200px; background-color:burlywood;">
+<form (ngSubmit)="OnButtonClicked()">
+    <div class="row mb-0">
+        <label for="itemName" class="col-sm-2 col-form-label" style="font-family:cursive">Name</label>
+        <div class="col-sm-10">
+            <input id="itemName" name="itemName" type="text" [(ngModel)]="itemName" />
+        </div>
+      </div>
+
+      <div class="row mb-0">
+        <label for="price" class="col-sm-2 col-form-label" style="font-family:cursive">Price</label>
+        <div class="col-sm-10">
+            <input id="price" name="price" type="text" [(ngModel)]="price" />
+        </div>
+      </div>
+
+      <div class="row mb-0">
+        <label for="quantity" class="col-sm-2 col-form-label" style="font-family:cursive">Quantity</label>
+        <div class="col-sm-10">
+            <input id="quantity" name="quantity" type="text" [(ngModel)]="quantity" />
+        </div>
+      </div>
+
+      <div class="row mb-0">
+        <label for="kcal" class="col-sm-2 col-form-label" style="font-family:cursive">Calories</label>
+        <div class="col-sm-10">
+            <input id="kcal" name="kcal" type="number" [(ngModel)]="kcal" />
+        </div>
+      </div>
+    
+    
+    <fieldset class="row mb-0">
+        <legend class="col-form-label col-sm-2 pt-0" style="font-family:cursive">Veg/Non-Veg</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="veg" id="veg" value="option1" checked>
+            <label class="form-check-label" for="veg" style="font-family:cursive">
+              Veg
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="veg" id="non-veg" value="option2">
+            <label class="form-check-label" for="non-veg" style="font-family:cursive">
+              Non-Veg
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+
+      <fieldset class="row mb-0">
+        <legend class="col-form-label col-sm-2 pt-0" style="font-family:cursive">Spl/Non-Spl</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="spl" id="spl" value="option1" checked>
+            <label class="form-check-label" for="spl" style="font-family:cursive">
+              Special
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="spl" id="non-spl" value="option2">
+            <label class="form-check-label" for="non-spl" style="font-family:cursive">
+              Non-Special
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="row mb-0">
+        <label for="no_Available" class="col-sm-2 col-form-label" style="font-family:cursive">Number avaliable</label>
+        <div class="col-sm-10">
+            <input id="no_Available" name="no_Available" type="number" [(ngModel)]="no_Available" />
+        </div>
+      </div>
+
+      <div class="row mb-0">
+        <label for="availableDate" class="col-sm-2 col-form-label" style="font-family:cursive">Available Date</label>
+        <div class="col-sm-10">
+            <input id="availableDate" name="availableDate" type="text" [(ngModel)]="availableDate" />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" style="background-color:green;margin-bottom:10px; margin-left: 200px;">{{buttonText}}</button>
+    
+</form>
+</div>
+

@@ -1,0 +1,23 @@
+<div class="row"> 
+<div class="card" style="width: 15rem; margin-right: 10px;  margin-left: 10px;margin-bottom: 10px; background-color:burlywood;" *ngFor="let item of items">
+    <div class="card-header" style="font-family:cursive; background-color: rgb(223, 115, 79);">  
+        {{item.spl}}-({{item.veg}})
+      </div>
+    <img src="./assets/img/Chocolate Cup Cake.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title" style="font-family:cursive">{{item.itemName}}</h5>
+      <div class="card-text" style="font-family:cursive">
+        <p>{{item.price}}</p>
+        <p>{{item.quantity}} per item</p>
+        <p>{{item.kcal}} Kcal</p>
+        <p>{{item.no_Available}} Available</p>
+        <!--<p>Available on: {{item.availableDate}}</p> -->
+     <!-- </div>
+      <a href="/order/{{item.itemId}}" class="btn btn-primary" >Order Now</a>
+    </div>  -->
+  </div>
+</div>
+
+
+  
+

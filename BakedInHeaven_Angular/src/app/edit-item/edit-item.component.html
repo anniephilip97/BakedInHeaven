@@ -1,0 +1,23 @@
+
+<div class="sticky-top" *ngIf="item">
+    <h2 style="font-family:cursive">
+        Edit Item
+    </h2>
+    <app-item-data-form 
+    buttonText="Save Changes"
+    [currentName]="item.itemName"
+    [currentPrice]="item.price"
+    [currentQuantity]="item.quantity"
+    [currentKcal]="item.kcal"
+    [currentVeg]="item.veg"
+    [currentSpl]="item.spl"
+    [currentNo_Available]="item.no_Available"
+    [currentAvailableDate]="item.availableDate"
+    (OnSubmit)="OnSubmit()"
+    ></app-item-data-form>
+</div>
+<!--
+<div class="sticky-top" *ngIf="!item">
+    <h3>Loading...</h3>
+</div>
+-->
